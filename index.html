@@ -24,17 +24,18 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 
-    <!-- Local Business / Emergency Plumbing Service Schema -->
+    <!-- SCHEMA: Main Local Business / Plumber object -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Plumber",
+      "@id": "https://emergencyplumbers.london/#plumber",
       "name": "Emergency Plumbers London",
-      "url": "https://www.emergencyplumbers.london",
-      "image": "https://www.emergencyplumbers.london/img/logo.jpg",
-      "priceRange": "$$",
-      "telephone": "07949 537 999",
+      "url": "https://emergencyplumbers.london",
+      "image": "https://emergencyplumbers.london/img/logo.jpg",
       "description": "Night-time emergency plumbing service operating from 9pm to 6am within 10km of W14 9BP in West London. Burst pipes, leaks, blocked toilets, emergency drains and make-safe callouts.",
+      "telephone": "+44 7949 537999",
+      "priceRange": "$$",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "33 Gunterstone Rd",
@@ -50,37 +51,95 @@
       "openingHoursSpecification": [
         {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
           "opens": "21:00",
           "closes": "23:59"
         },
         {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
           "opens": "00:00",
           "closes": "06:00"
         }
       ],
-      "areaServed": [
-        "West Kensington","Barons Court","Kensington","Kensington Olympia","Earl's Court","South Kensington",
-        "Gloucester Road","Chelsea","Fulham","Parsons Green","Walham Green","Sands End","Hammersmith","Brook Green",
-        "Shepherd's Bush","White City","Holland Park","Notting Hill","Ladbroke Grove","Bayswater","Paddington",
-        "Ravenscourt Park","Stamford Brook","Turnham Green","Chiswick","Acton","Ealing Broadway","Putney","Barnes",
-        "Wandsworth Town","Battersea","Clapham Junction","Victoria","Belgravia","Westminster","Pimlico"
-      ],
       "contactPoint": [
         {
           "@type": "ContactPoint",
-          "telephone": "07949 537 999",
-          "contactType": "Night emergency",
+          "telephone": "+44 7949 537999",
+          "contactType": "Emergency",
+          "areaServed": "London",
           "availableLanguage": "en-GB"
         },
         {
           "@type": "ContactPoint",
-          "telephone": "0207 371 3333",
-          "contactType": "Daytime enquiries and follow-up work",
+          "telephone": "+44 20 7371 3333",
+          "contactType": "Customer Service",
+          "areaServed": "London",
           "availableLanguage": "en-GB"
         }
+      ],
+      "serviceArea": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": 51.4912,
+          "longitude": -0.2075
+        },
+        "geoRadius": 10000
+      },
+      "areaServed": [
+        "West Kensington",
+        "Barons Court",
+        "Kensington",
+        "Kensington Olympia",
+        "Earl's Court",
+        "South Kensington",
+        "Gloucester Road",
+        "Chelsea",
+        "Fulham",
+        "Parsons Green",
+        "Walham Green",
+        "Sands End",
+        "Hammersmith",
+        "Brook Green",
+        "Shepherd's Bush",
+        "White City",
+        "Holland Park",
+        "Notting Hill",
+        "Ladbroke Grove",
+        "Bayswater",
+        "Paddington",
+        "Ravenscourt Park",
+        "Stamford Brook",
+        "Turnham Green",
+        "Chiswick",
+        "Acton",
+        "Ealing Broadway",
+        "Putney",
+        "Barnes",
+        "Wandsworth Town",
+        "Battersea",
+        "Clapham Junction",
+        "Victoria",
+        "Belgravia",
+        "Westminster",
+        "Pimlico"
       ]
     }
     </script>
@@ -426,7 +485,7 @@
                 </div>
             </div>
 
-            <!-- NEW: Area SEO links -->
+            <!-- Area SEO links -->
             <div class="text-center mt-5">
                 <h2 class="mb-3">Emergency Plumber In Your Area</h2>
                 <p>Read more about our local night emergency plumbing service in:</p>
@@ -444,7 +503,7 @@
     <div id="contact" class="container-fluid my-5 px-0">
         <div class="video">
             <h1 class="text-white mb-4">Emergency Plumbers London</h1>
-            <h3 class="text-white mb-0">Night Emergencies Only – 9pm to 6am</h3>
+            <h3 class="text-white mb-0">Night Emergencies Only – 9am to 6pm</h3>
         </div>
         <div class="container position-relative" style="margin-top:-6rem;">
             <div class="row justify-content-center">
