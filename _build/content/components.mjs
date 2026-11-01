@@ -38,8 +38,8 @@ export function areaChips(c, exclude = "") {
 export function priceText(c) {
   if (c.pricingApproved) {
     const b = c.config.pricing.bands;
-    const night = b.find((x) => /overnight/i.test(x.name));
-    return `<p>Charges depend on the time of day. ${night ? `Overnight, the first hour is <strong>£${night.firstHour}</strong>, then £${night.perHalfHour} per half hour.` : ""} Parts are extra and agreed before they're fitted. <a href="${c.link("/emergency-plumber-prices/")}">See every time band</a>.</p>`;
+    const rows = b.map((x) => `<li><strong>${c.esc(x.name)}</strong> (${c.esc(x.hours)}): <strong>£${x.firstHour}</strong> first hour, then £${x.perHalfHour} per half hour</li>`).join("");
+    return `<p>The charge depends on when you need us:</p><ul class="price-list">${rows}</ul><p>Parts are extra and agreed before they're fitted. You'll know the charge before anyone sets off. <a href="${c.link("/emergency-plumber-prices/")}">Full price details</a>.</p>`;
   }
   return `<p>Charges are set in time bands — weekday daytime, evenings and weekends, overnight, and bank holidays — with a first-hour charge and then half-hourly time. We tell you the charge for your time of day <strong>before anyone sets off</strong>, and any parts are agreed before they're fitted. <a href="${c.link("/emergency-plumber-prices/")}">How our pricing works</a>.</p>`;
 }

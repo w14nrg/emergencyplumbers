@@ -75,7 +75,7 @@ const home = {
 
 <section class="section"><div class="wrap home-hero-grid">
   <div><p class="eyebrow">Emergency pricing</p><h2 class="section-title">Know the cost before we knock.</h2></div>
-  <div class="prose">${priceText(c)}<p>We don't advertise "no call-out fee" or "fixed price" deals, because emergency work rarely fits them honestly. What we do promise is that you'll know the charge before we set off.</p></div>
+  <div class="prose">${priceText(c)}<p>We don't advertise "no call-out fee" or "fixed price" deals, because emergency work rarely fits them honestly.</p></div>
 </div></section>
 
 <section class="section section-navy"><div class="wrap">

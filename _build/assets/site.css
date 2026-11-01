@@ -247,3 +247,6 @@ td.num { font-weight: 900; font-size: 1.15rem; white-space: nowrap; }
 
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; scroll-behavior: auto !important; } }
 @media print { .site-header, .mobile-bar, .site-footer, .checker { display: none; } }
+
+.price-list { list-style: none; padding: 0 !important; display: grid; gap: .5rem; }
+.price-list li { background: #fff; border-radius: 1rem; padding: .8rem 1rem; box-shadow: 0 0 0 2px var(--line); margin: 0 !important; }
