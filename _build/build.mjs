@@ -22,6 +22,8 @@ const config = JSON.parse(fs.readFileSync(path.join(here, "site.config.json"), "
 const waReady = Boolean(config.whatsapp?.verified && config.whatsapp?.e164);
 const phoneReady = Boolean(config.phone?.e164 && config.phone?.display);
 const draft = !phoneReady;
+const showNumber = phoneReady && config.phone.showNumber !== false;
+const callLabel = showNumber ? `Call ${config.phone?.display}` : "Call now";
 if (release && draft) {
   console.error("RELEASE BLOCKED: phone is not set in _build/site.config.json. Nothing was written.");
   process.exit(1);
@@ -67,7 +69,7 @@ function cta(issue, { size = "lg", light = false } = {}) {
   if (waReady)
     parts.push(`<a class="btn btn-wa btn-${size}" href="${esc(waHref(issue))}" target="_blank" rel="noopener" data-track="whatsapp">${icon.wa}<span>WhatsApp an emergency</span></a>`);
   if (phoneReady)
-    parts.push(`<a class="btn ${waReady ? (light ? "btn-ghost-light" : "btn-ghost") : "btn-hot"} btn-${size}" href="tel:${esc(config.phone.e164)}" data-track="phone">${icon.phone}<span>Call ${esc(config.phone.display)}</span></a>`);
+    parts.push(`<a class="btn ${waReady ? (light ? "btn-ghost-light" : "btn-ghost") : "btn-hot"} btn-${size}" href="tel:${esc(config.phone.e164)}" data-track="phone">${icon.phone}<span>${esc(callLabel)}</span></a>`);
   if (!parts.length)
     parts.push(`<span class="btn btn-pending btn-${size}" role="note">Contact buttons appear once the new number is added</span>`);
   return `<div class="cta-row">${parts.join("")}</div>`;
@@ -98,7 +100,7 @@ const nav = [
 
 function header(link, current) {
   const items = nav.map(([l, h]) => `<a href="${link(h)}"${current === h ? ' aria-current="page"' : ""}>${l}</a>`).join("");
-  const headerCta = phoneReady ? `<a class="btn btn-hot btn-sm header-call" href="tel:${esc(config.phone.e164)}" data-track="phone">${icon.phone}<span>${esc(config.phone.display)}</span></a>` : "";
+  const headerCta = phoneReady ? `<a class="btn btn-hot btn-sm header-call" href="tel:${esc(config.phone.e164)}" data-track="phone">${icon.phone}<span>${esc(showNumber ? config.phone.display : "Call now")}</span></a>` : "";
   return `<a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap header-inner">
@@ -129,7 +131,7 @@ function footer(link) {
   const areas = pages.filter((p) => p.kind === "area").map((p) => [p.areaName, p.path]);
   const li = (arr) => arr.map(([l, h]) => `<li><a href="${link(h)}">${esc(l)}</a></li>`).join("");
   const contact = [];
-  if (phoneReady) contact.push(`<li><a href="tel:${esc(config.phone.e164)}" data-track="phone">${esc(config.phone.display)}</a></li>`);
+  if (phoneReady) contact.push(`<li><a href="tel:${esc(config.phone.e164)}" data-track="phone">${esc(showNumber ? config.phone.display : "Call now")}</a></li>`);
   if (waReady) contact.push(`<li><a href="${esc(waHref(""))}" target="_blank" rel="noopener" data-track="whatsapp">WhatsApp</a></li>`);
   if (config.email) contact.push(`<li><a href="mailto:${esc(config.email)}">${esc(config.email)}</a></li>`);
   if (config.address) {
@@ -241,7 +243,7 @@ ${body}
 </main>
 ${footer(link)}
 ${mobileBar(page.waIssue || "")}
-<script>window.EPL=${JSON.stringify({ wa: waReady ? config.whatsapp.e164.replace(/\D/g, "") : null, tel: phoneReady ? config.phone.e164 : null, telDisplay: phoneReady ? config.phone.display : null, core: config.coverage.core, arrangement: config.coverage.arrangement })};</script>
+<script>window.EPL=${JSON.stringify({ wa: waReady ? config.whatsapp.e164.replace(/\D/g, "") : null, tel: phoneReady ? config.phone.e164 : null, telDisplay: phoneReady ? callLabel : null, core: config.coverage.core, arrangement: config.coverage.arrangement })};</script>
 <script src="${js}" defer></script>
 </body>
 </html>

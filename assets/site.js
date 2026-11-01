@@ -43,7 +43,7 @@
   function buttons(issue, postcode) {
     var h = "";
     if (C.wa) h += '<a class="btn btn-wa" target="_blank" rel="noopener" data-track="whatsapp" href="' + waLink(issue, postcode) + '">WhatsApp your postcode</a>';
-    if (C.tel) h += '<a class="btn ' + (C.wa ? "btn-ghost" : "btn-hot") + '" data-track="phone" href="tel:' + C.tel + '">Call ' + C.telDisplay + "</a>";
+    if (C.tel) h += '<a class="btn ' + (C.wa ? "btn-ghost" : "btn-hot") + '" data-track="phone" href="tel:' + C.tel + '">' + C.telDisplay + "</a>";
     return h ? '<div class="cta-row">' + h + "</div>" : "";
   }
 

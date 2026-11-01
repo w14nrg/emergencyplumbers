@@ -209,8 +209,9 @@ td.num { font-weight: 900; font-size: 1.15rem; white-space: nowrap; }
 
 /* chips & faq */
 .chips { display: flex; flex-wrap: wrap; gap: .7rem; list-style: none; padding: 0; margin: 0; }
-.chips a, .chips span { display: inline-block; background: #fff; border: 2px solid var(--navy); border-radius: 999px; padding: .5rem 1rem; font-weight: 900; font-size: .92rem; text-decoration: none; box-shadow: 3px 3px 0 var(--navy); }
+.chips a, .chips span { display: inline-block; background: #fff; color: var(--navy); border: 2px solid var(--navy); border-radius: 999px; padding: .5rem 1rem; font-weight: 900; font-size: .92rem; text-decoration: none; box-shadow: 3px 3px 0 var(--navy); }
 .chips a:hover { background: var(--yellow); }
+.section-navy .chips a, .section-navy .chips span { border-color: #fff; box-shadow: 3px 3px 0 var(--yellow); }
 .chips .soft { box-shadow: none; border-style: dashed; color: var(--ink-70); }
 .faq details { background: #fff; border-radius: 1.25rem; box-shadow: 0 0 0 2px var(--line); margin-bottom: .75rem; }
 .faq summary { cursor: pointer; padding: 1.1rem 1.3rem; font-weight: 900; font-size: 1.05rem; list-style: none; display: flex; justify-content: space-between; gap: 1rem; }
