@@ -199,8 +199,11 @@ function render(page) {
   const canonical = absUrl(page.path);
   const css = link("/assets/site.css");
   const js = link("/assets/site.js");
+  const fictional = phoneReady && /^\+447700900/.test(config.phone.e164);
   const banner = draft
     ? `<div class="draft-banner" role="note">Draft preview — not yet live. Contact buttons appear once the new mobile number is added.</div>`
+    : preview
+    ? `<div class="draft-banner" role="note">Preview — not the live site.${fictional ? " 07700 900123 is a fictional test number used to show the buttons." : ""}</div>`
     : "";
   // Preview builds rewrite any root-relative link written directly in content.
   const fix = (html) => (preview ? html.replace(/href="(\/[^"]*)"/g, (m, u) => `href="${link(u)}"`) : html);
