@@ -1,42 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
-<url>
-  <loc>https://emergencyplumbers.london/</loc>
-  <lastmod>2025-11-26T10:20:42+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://emergencyplumbers.london/index.html</loc>
-  <lastmod>2025-11-26T10:20:42+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://emergencyplumbers.london/emergency-plumber-kensington.html</loc>
-  <lastmod>2025-11-26T10:20:42+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://emergencyplumbers.london/emergency-plumber-chelsea.html</loc>
-  <lastmod>2025-11-26T10:20:42+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://emergencyplumbers.london/emergency-plumber-hammersmith.html</loc>
-  <lastmod>2025-11-26T10:20:42+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://emergencyplumbers.london/emergency-plumber-fulham.html</loc>
-  <lastmod>2025-11-26T10:20:42+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://emergencyplumbers.london/</loc><lastmod>2026-11-01</lastmod></url>
+  <url><loc>https://emergencyplumbers.london/emergency-plumbing/</loc><lastmod>2026-11-01</lastmod></url>
+  <url><loc>https://emergencyplumbers.london/out-of-hours-plumber/</loc><lastmod>2026-11-01</lastmod></url>
+  <url><loc>https://emergencyplumbers.london/emergency-plumber-prices/</loc><lastmod>2026-11-01</lastmod></url>
+  <url><loc>https://emergencyplumbers.london/burst-pipe-repair/</loc><lastmod>2026-11-01</lastmod></url>
+  <url><loc>https://emergencyplumbers.london/leaking-ceiling/</loc><lastmod>2026-11-01</lastmod></url>
+  <url><loc>https://emergencyplumbers.london/blocked-toilet-emergency/</loc><lastmod>2026-11-01</lastmod></url>
+  <url><loc>https://emergencyplumbers.london/emergency-drain-unblocking/</loc><lastmod>2026-11-01</lastmod></url>
+  <url><loc>https://emergencyplumbers.london/leaking-radiator-repair/</loc><lastmod>2026-11-01</lastmod></url>
+  <url><loc>https://emergencyplumbers.london/emergency-stopcock-repair/</loc><lastmod>2026-11-01</lastmod></url>
+  <url><loc>https://emergencyplumbers.london/emergency-shower-leaks/</loc><lastmod>2026-11-01</lastmod></url>
+  <url><loc>https://emergencyplumbers.london/areas/</loc><lastmod>2026-11-01</lastmod></url>
+  <url><loc>https://emergencyplumbers.london/emergency-plumber-west-kensington.html</loc><lastmod>2026-11-01</lastmod></url>
+  <url><loc>https://emergencyplumbers.london/emergency-plumber-kensington.html</loc><lastmod>2026-11-01</lastmod></url>
+  <url><loc>https://emergencyplumbers.london/emergency-plumber-hammersmith.html</loc><lastmod>2026-11-01</lastmod></url>
+  <url><loc>https://emergencyplumbers.london/emergency-plumber-fulham.html</loc><lastmod>2026-11-01</lastmod></url>
+  <url><loc>https://emergencyplumbers.london/emergency-plumber-chelsea.html</loc><lastmod>2026-11-01</lastmod></url>
+  <url><loc>https://emergencyplumbers.london/emergency-plumber-earls-court.html</loc><lastmod>2026-11-01</lastmod></url>
+  <url><loc>https://emergencyplumbers.london/emergency-plumber-south-kensington.html</loc><lastmod>2026-11-01</lastmod></url>
+  <url><loc>https://emergencyplumbers.london/emergency-plumber-notting-hill.html</loc><lastmod>2026-11-01</lastmod></url>
+  <url><loc>https://emergencyplumbers.london/emergency-plumber-shepherds-bush.html</loc><lastmod>2026-11-01</lastmod></url>
+  <url><loc>https://emergencyplumbers.london/about/</loc><lastmod>2026-11-01</lastmod></url>
+  <url><loc>https://emergencyplumbers.london/contact/</loc><lastmod>2026-11-01</lastmod></url>
+  <url><loc>https://emergencyplumbers.london/advice/</loc><lastmod>2026-11-01</lastmod></url>
+  <url><loc>https://emergencyplumbers.london/advice/burst-pipe-at-night/</loc><lastmod>2026-11-01</lastmod></url>
+  <url><loc>https://emergencyplumbers.london/advice/turn-off-water-london-flat/</loc><lastmod>2026-11-01</lastmod></url>
+  <url><loc>https://emergencyplumbers.london/advice/overnight-call-out/</loc><lastmod>2026-11-01</lastmod></url>
+  <url><loc>https://emergencyplumbers.london/advice/can-it-wait-until-morning/</loc><lastmod>2026-11-01</lastmod></url>
+  <url><loc>https://emergencyplumbers.london/privacy/</loc><lastmod>2026-11-01</lastmod></url>
+  <url><loc>https://emergencyplumbers.london/terms/</loc><lastmod>2026-11-01</lastmod></url>
 </urlset>

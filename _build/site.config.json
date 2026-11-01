@@ -1,0 +1,43 @@
+{
+  "_readme": "The ONLY place contact details live. Edit here, then run: node _build/build.mjs --release. Null values are left off the site (never shown as placeholders). --release refuses to build while phone is null.",
+  "siteName": "Emergency Plumbers London",
+  "domain": "https://emergencyplumbers.london",
+
+  "phone": null,
+  "_phoneExample": { "display": "07xxx xxx xxx", "e164": "+447xxxxxxxxx" },
+
+  "whatsapp": {
+    "e164": null,
+    "verified": false,
+    "_note": "Set e164 to the WhatsApp Business number (digits, with country code) and verified to true only after a test message has reached the business inbox. Until then no WhatsApp button is rendered."
+  },
+
+  "email": null,
+
+  "address": null,
+  "_addressExample": {
+    "streetAddress": "",
+    "addressLocality": "London",
+    "postalCode": "",
+    "type": "trading | registered | correspondence"
+  },
+
+  "legalName": null,
+
+  "pricing": {
+    "approved": false,
+    "_note": "Proposed bands from the Phase 1 report. Figures are only published when approved is true.",
+    "vatNote": "",
+    "bands": [
+      { "name": "Weekday daytime", "hours": "Monday to Friday, 8am to 6pm", "firstHour": 120, "perHalfHour": 50 },
+      { "name": "Evenings and weekends", "hours": "6pm to 10pm on weekdays; 8am to 10pm at weekends", "firstHour": 160, "perHalfHour": 60 },
+      { "name": "Overnight", "hours": "10pm to 8am, any day", "firstHour": 220, "perHalfHour": 75 },
+      { "name": "Bank holidays", "hours": "All day on bank holidays, 24 and 31 December", "firstHour": 260, "perHalfHour": 80 }
+    ]
+  },
+
+  "coverage": {
+    "core": ["W14", "W6", "W8", "W11", "W12", "SW5", "SW6", "SW7", "SW3", "SW10", "W2", "SW1"],
+    "arrangement": ["SW11", "SW15", "W4", "W3", "W9", "W10", "NW8", "W1", "SW13", "SW18", "SW8", "SW4"]
+  }
+}
