@@ -26,15 +26,15 @@
   },
   "legalName": null,
   "pricing": {
-    "approved": false,
+    "approved": true,
     "_note": "Proposed bands from the Phase 1 report. Figures are only published when approved is true.",
     "vatNote": "",
     "bands": [
       {
         "name": "Weekday daytime",
         "hours": "Monday to Friday, 8am to 6pm",
-        "firstHour": 120,
-        "perHalfHour": 50
+        "firstHour": 85,
+        "perHalfHour": 40
       },
       {
         "name": "Evenings and weekends",
