@@ -3,8 +3,8 @@
   "siteName": "Emergency Plumbers London",
   "domain": "https://emergencyplumbers.london",
   "phone": {
-    "display": "07340 275956",
-    "e164": "+447340275956",
+    "display": "07577 764742",
+    "e164": "+447577764742",
     "showNumber": false
   },
   "_phoneExample": {
@@ -12,7 +12,7 @@
     "e164": "+447xxxxxxxxx"
   },
   "whatsapp": {
-    "e164": "447340275956",
+    "e164": "447577764742",
     "verified": true,
     "_note": "Set e164 to the WhatsApp Business number (digits, with country code) and verified to true only after a test message has reached the business inbox. Until then no WhatsApp button is rendered."
   },
